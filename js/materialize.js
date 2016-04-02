@@ -3653,6 +3653,8 @@ $(document).ready(function(){
 }( jQuery ));;(function ($) {
   $(document).ready(function() {
 
+      $('.slider').slider({full_width: true});
+
     // jQuery reverse
     $.fn.reverse = [].reverse;
 
