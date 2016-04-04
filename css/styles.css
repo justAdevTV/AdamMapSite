@@ -1,0 +1,17 @@
+.divider {
+    margin: 40px 0;
+    margin-bottom: 50px;
+}
+
+
+.sources {
+    font-size: 20px;
+}
+.sources a {
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.sources p {
+    text-indent: 25px;
+}
