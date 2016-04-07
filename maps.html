@@ -14,9 +14,6 @@
 </head>
 
 <body>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
 
     <nav class="blue darken-1 z-depth-1">
         <div class="nav-wrapper container">
@@ -38,14 +35,15 @@
     <div class="container">
         <h2>Maps</h2>
         <div class="row">
-            <div class="col s12 m4">
+            <div class="col s12 m6">
                 <h4>1987-1992 Drought</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.3586038054405!2d-118.50735388478135!3d34.1883128805691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c299ea6ed51983%3A0x76082e7694bed7c0!2sHigh+Tech+Los+Angeles!5e0!3m2!1sen!2sus!4v1459639756238" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img src="images/state.png" id="mapOne" class="materialboxed responsive-img">
             </div>
-            <div class="col s12 offset-m2 m4">
+            <div class="col s12 m6">
                 <h4>2012- 2015 Drought</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.3586038054405!2d-118.50735388478135!3d34.1883128805691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c299ea6ed51983%3A0x76082e7694bed7c0!2sHigh+Tech+Los+Angeles!5e0!3m2!1sen!2sus!4v1459639756238" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img src="images/state.png" id="mapTwo" class="materialboxed responsive-img">
             </div>
+            <div class="col s12 center light-blue-text"><p>(Click on maps to zoom in)</p></div>
         </div>
     </div>
 
@@ -53,21 +51,21 @@
         <div class="container row">
             <div class="col s12 m3">
                 <h2>Data</h2>
-                <form action="#">
+                <form id="options">
                     <p>
-                        <input type="checkbox" id="population" />
+                        <input type="radio" name="form" id="population" class="with-gap" />
                         <label for="population">Population</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="storage" />
+                        <input type="radio" name="form" id="storage" class="with-gap" />
                         <label for="storage">Reservoir Storage</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="precipitation" />
+                        <input type="radio" name="form" id="precipitation" class="with-gap" />
                         <label for="precipitation">Precipitation</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="snow" />
+                        <input type="radio" name="form" id="snow" class="with-gap" />
                         <label for="snow">Snow Depth</label>
                     </p>
                 </form>
@@ -91,6 +89,14 @@
             </div>
         </div>
     </footer>
+    
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    
+    <script type="text/javascript" src="js/maps.js"></script>
+    
 </body>
 
 </html>
