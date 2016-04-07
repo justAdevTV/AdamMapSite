@@ -3,10 +3,10 @@
     margin-bottom: 50px;
 }
 
-
 .sources {
     font-size: 20px;
 }
+
 .sources a {
     font-weight: 700;
     margin-left: 15px;
@@ -14,4 +14,10 @@
 
 .sources p {
     text-indent: 25px;
+}
+
+.caption span {
+    padding: 10px;
+    background: rgba(0, 0, 255, 0.5);
+    font-weight: 700;
 }
