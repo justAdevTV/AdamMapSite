@@ -21,3 +21,8 @@
     background: rgba(0, 0, 255, 0.5);
     font-weight: 700;
 }
+
+#conversion strong {
+    margin-right: 10px;
+    font-weight: 900;
+}
