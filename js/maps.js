@@ -11,7 +11,7 @@ $(document).ready(function () {
             $('#mapOne').attr('src', 'images/1/reservoir.png');
             $('#mapTwo').attr('src', 'images/2/reservoir.png');
             $('#explanation').text("This is the amount of water in thousands of acre-feet stored in California reservoirs. There were 155 reservoirs measured in 1988-1992 and only 154 measured in 2014. The 1988-1992 measurments were also taken in September (before rain) while the 2014 measurments were taken in February (after rain).");
-            $('#change').html("<p>The differences in the data make an overall change unobtainable. However, the data and government news show that hydrologic infrastructure in California has had little improvement since 1992.</p>");
+            $('#change').html("<p>The differences in the data make an overall change unobtainable. However, the data and government news show that hydrologic infrastructure in California has had little improvement since 1992. In 1989 the Spicer Meadows Reservoir opened (capacity 190,000 AF) and in 1998 the Los Vaqueros Reservoir opened (capacity 160,000 AF).</p>");
         } else if (id === "precipitation") {
             $('#mapOne').attr('src', 'images/1/rain.png');
             $('#mapTwo').attr('src', 'images/2/rain.png');
