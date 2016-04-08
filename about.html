@@ -663,6 +663,75 @@
     <script type="text/javascript" src="js/materialize.js"></script>
 
     <script type="text/javascript" src="js/maps.js"></script>
+    
+        <style>
+        body,
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        canvas {
+            z-index: 999;
+            margin: 0px;
+            padding: 0px;
+            background-color: transparent;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+    </style>
+    <canvas id="c"></canvas>
+    <script>
+        var rainNum = 60;
+
+        var canvas = document.getElementById('c');
+        var ctx = canvas.getContext('2d');
+
+        var w = window.innerWidth / 1.1;
+        var h = window.innerHeight / 1.1;
+        var x = 100;
+        var y = 100;
+
+        var rain = [];
+        for (i = 0; i < rainNum; i++) {
+            rain.push(new newRain);
+        }
+
+        function newRain() {
+            this.x = Math.random() * w;
+            this.y = Math.random() * h;
+        }
+
+        var draw = function () {
+            c.width = w;
+            c.height = h - 500;
+
+            for (t = 0; t < rain.length; t++) {
+                var r = rain[t];
+
+                ctx.beginPath();
+                ctx.fillStyle = 'rgba(0,200,255,0.6)';
+                ctx.fillRect(r.x, r.y, 0.5, 10);
+
+                r.y++;
+
+                if (r.y > h + 20) {
+                    r.y = -20;
+                }
+            }
+        };
+
+        setInterval(draw, 0);
+    </script>
+    <!--[if lt IE 9 ]>
+<style>
+canvas { visibility: hidden; display: none; }
+</style>
+<![endif]-->
 </body>
 
 </html>
