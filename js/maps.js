@@ -20,7 +20,7 @@ $(document).ready(function () {
         } else if (id === "snow") {
             $('#mapOne').attr('src', 'images/1/snow.png');
             $('#mapTwo').attr('src', 'images/2/snow.png');
-            $('#explanation').text("This is the amount of inches of snow California has received. It is the average of several snow sensor's April readings in each of the applicable districts. No sensors where available in the districts without depths.");
+            $('#explanation').text("This is the amount of inches of snow California has received. It is the average of several snow sensor's April readings in each of the applicable districts. No sensors were available in the districts without depths.");
             $('#change').html("<p>There has been a <strong>28.57%</strong> decrease in the amount of snow California has received since the 1988-1992 drought.</p>");
         }
     });
